@@ -11,28 +11,28 @@
 
 
 <script language="javascript">
-	function fxdevice(){
+
 		document.addEventListener("deviceready",fxDeviceReady,false);	
-	}
+
 	
-	function fxDEviceReady(){
+	function fxDeviceReady(){
 		var element = document.getElementById("myp");
-		element.innerHTML=device.name + device.phonegap ;	
+		element.innerHTML=device.name ;	
 	}
 </script>
 </head> 
-<body onLoad="fxdevice()"> 
+<body> 
 
 <div data-role="page" id="page">
 	<div data-role="header">
-		<a href="Index.html" rel="external" data-icon="home">HOME</a>
+		<a href="index.html" rel="external" data-icon="home">HOME</a>
         <h1>第 1 页</h1>
 	</div>
 	<div data-role="content">
-		<span id="myp"></span>
+		设备信息:<span id="myp">消灭我吧</span>
 
     </div>
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>页面脚注</h4>
 	</div>
 </div>
