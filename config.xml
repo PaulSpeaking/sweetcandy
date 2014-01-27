@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<!--这个是在手机上看到的程序名-->
+<name>SWEET CANDY</name>
+
+<description>
+A GIFT FOR SWEET SWEET CANDY
+</description>
+
+<!--屏幕icon的位置-->
+<icon src="icon.jpg" />
+<!--这个是作者信息-->
+<author href="https://example.com" email="you@example.com">
+PAUL@AROOWORKS
+</author>
+
+<gap:splash src="splash.png" />
+
+
+</widget>
