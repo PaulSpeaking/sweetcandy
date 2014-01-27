@@ -11,16 +11,21 @@
 
 
 <script language="javascript">
-	$(document).ready(function(e) {
-        $("#myp").html(device.uuid);
-    });
+	function fxdevice(){
+		document.addEventListener("deviceready",fxDeviceReady,false);	
+	}
+	
+	function fxDEviceReady(){
+		var element = document.getElementById("myp");
+		element.innerHTML=device.name + device.phonegap ;	
+	}
 </script>
 </head> 
-<body> 
+<body onLoad="fxdevice()"> 
 
 <div data-role="page" id="page">
 	<div data-role="header">
-		<a href="Index.html" data-icon="home">HOME</a>
+		<a href="Index.html" rel="external" data-icon="home">HOME</a>
         <h1>第 1 页</h1>
 	</div>
 	<div data-role="content">
