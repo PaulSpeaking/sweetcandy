@@ -5,6 +5,7 @@ h4{
 }
 
 #divShine img{
-	width: 400px;
-	height: 600px;
+/*	width: 400px;
+	height: 600px;*/
+	padding:10px;
 }
